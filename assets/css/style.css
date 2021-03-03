@@ -1,0 +1,72 @@
+@import './css/reset.css';
+table {
+  background-color: white;
+  --border-size: 3px;
+  --border-style: solid;
+  --border-color: darkblue;
+  width: 60%;
+  border-spacing: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+th + th,
+td + td {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.1); /* Параметры тени */
+}
+
+th,
+td {
+  text-align: center;
+  padding: 6px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+tr:last-child td {
+  border-bottom: unset;
+}
+
+th {
+  background-color: var(--border-color);
+  color: white;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  margin: 10px;
+  bottom: 10px;
+}
+
+th:nth-child(1) {
+  background: #7979a8;
+}
+
+th:nth-child(2) {
+  background: #64649e;
+}
+
+th:nth-child(3) {
+  background: #4d4d91;
+}
+
+th:nth-child(4) {
+  background: #2c2c80;
+}
+
+th:nth-child(5) {
+  background: #000069;
+}
+
+tr:nth-child(2n + 1) {
+  background: #e7e7e7;
+}
+
+button:hover {
+  background: rgba(13, 4, 100, 0.8);
+  color: white;
+}
+
+tfoot {
+  background: rgba(228, 228, 228, 0.8);
+}
